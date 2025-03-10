@@ -87,7 +87,20 @@ This will open the **Tkinter GUI**, where you can:
 - If using voice input, click the **"Speak" button**, and the chatbot will listen to your query.
 - The chatbot then processes the input using **OpenAI’s NLP**.
 - It **extracts relevant filters** and **matches them with property data**.
-- The response is displayed in the **output area** of the GUI.
+- The JSON response to connect to a platform API is then displayed in the **output area** of the GUI.
+- All JSON requests are then saved to a file called 'all_responses.json'
+
+📝 How to make a Request:
+----------------------------------
+- filter_data.xlsx contains the filters/constraints
+- the chatbot takes requests in formats such as:
+  - "Properties in Austin with at least 100 units but no more than 200"
+  - "Properties in Atlanta with no more than 10000 square feet but at least 8000 square feet"
+  - "Properties in Chicago owned by Bob Jones Company"
+- It can also take multiple cities at once and multiple filters/constraints:
+  - "Properties in Dallas, Fort Worth, and Coppell near Texas Christian University and Southern Methodist University"
+  - "Properties in Boston and Cambridge with at least 100 units and no more than 5000 square feet"
+- The chatbot can take in pretty much any request format but these are just some examples that will work
 
 ----------------------------------
 📂 Project Structure:
